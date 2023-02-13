@@ -10,45 +10,46 @@
 </head>
 <body>
     <div class="inputContainer">
-
+        <section class="inputRoundsSection">
+            <p class="textTop">In how many rounds you think you can guess the number?</p>
+            <p id="outputRounds"></p>
+            <form id="roundsInput" onsubmit="return false">
+                <div class="inputDiv">
+                    <div>
+                        <input checked value="4" type="radio" name="rounds" id="fourRounds">
+                        <label for="fourRounds">4</label>
+                    </div>
+                    <div>
+                        <input value="5" type="radio" name="rounds" id="fiveRounds">
+                        <label id="fiveRoundsLabel" for="fiveRounds">5</label>
+                    </div>
+                </div>
+                <div class="inputDiv">
+                    <div>
+                        <input value="6" type="radio" name="rounds" id="sixRounds">
+                        <label for="sixRounds">6</label>
+                    </div>
+                    <div>
+                        <input value="custom" type="radio" name="rounds" id="customRounds">
+                        <label for="customRounds">custom</label>
+                    </div>
+                </div>
+                <div>
+                    <input type="number" name="customInput" id="customInput">
+                </div>
+            </form>
+            
+        </section>
     </div>
-    <section class="inputRoundsSection">
-        <p>In how many rounds you think you can guess the number?</p>
-        <p id="outputRounds"></p>
-        <form id="roundsInput" onsubmit="return false">
-            <div class="inputDiv">
-                <div>
-                    <input checked value="4" type="radio" name="rounds" id="fourRounds">
-                    <label for="fourRounds">4</label>
-                </div>
-                <div>
-                    <input value="5" type="radio" name="rounds" id="fiveRounds">
-                    <label id="fiveRoundsLabel" for="fiveRounds">5</label>
-                </div>
-            </div>
-            <div class="inputDiv">
-                <div>
-                    <input value="6" type="radio" name="rounds" id="sixRounds">
-                    <label for="sixRounds">6</label>
-                </div>
-                <div>
-                    <input value="custom" type="radio" name="rounds" id="customRounds">
-                    <label for="customRounds">custom</label>
-                </div>
-            </div>
-            <div>
-                <input type="number" name="customInput" id="customInput">
-            </div>
-        </form>
-        
-    </section>
-    <section class="inputSection">
-        <form onsubmit="return false">
-            <input type="number" name="numberInput" id="numberInput">
-            <button id="inputButton">guess</button>
-        </form>
-    </section>
-        <p id="outputResult"></p>
-        <button id="restartButton" onclick="window.location.reload()">Play again</button>
+    <div class="inputContainer">
+        <section class="inputSection">
+            <form onsubmit="return false">
+                <input type="number" name="numberInput" id="numberInput">
+                <button id="inputButton">guess</button>
+            </form>
+        </section>
+    </div>
+    <p id="outputResult"></p>
+    <button id="restartButton" onclick="window.location.reload()">Play again</button>
 </body>
 </html>

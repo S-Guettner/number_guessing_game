@@ -3,7 +3,18 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: rgb(39, 32, 58);
+    color: white;
+}
+.inputContainer{
+    display: flex;
+    justify-content: center;
+}
 
+.textTop{
+    margin-bottom: 1rem;
+}
 #customInput{
     display: none;
 }
@@ -54,4 +65,10 @@
     margin: auto;
     padding: 1rem;
     margin-bottom: .5rem;
+}
+#outputResult{
+    text-align: center;
+}
+#restartButton{
+    margin: auto;
 }
