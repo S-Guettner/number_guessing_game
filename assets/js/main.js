@@ -5,12 +5,12 @@ const inputButton = document.querySelector("#inputButton")
 const outputRounds = document.querySelector("#outputRounds")
 const outputResult = document.querySelector("#outputResult")
 const restartButton = document.querySelector("#restartButton")
-
+//global variables
 let roundsToPlay = 4
 let roundsPlayed = 0
 let randomNumber = Math.floor(Math.random() * 100) + 1
 let guessedNumber
-
+//get value of rounds input
 roundsInput.addEventListener('change', (e) => {
     if(e.target.value != "custom"){
         roundsToPlay = Number(e.target.value)
@@ -20,7 +20,7 @@ roundsInput.addEventListener('change', (e) => {
         roundsToPlay = Number(e.target.value)
     }
 })
-
+//checks number and compares with randomNumber && checks for played rounds
 inputButton.addEventListener('click' , () => {
     roundsInput.style.display="none"
     outputRounds.style.display="block"
