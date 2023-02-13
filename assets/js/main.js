@@ -6,12 +6,10 @@ const outputRounds = document.querySelector("#outputRounds")
 const outputResult = document.querySelector("#outputResult")
 const restartButton = document.querySelector("#restartButton")
 
-
 let roundsToPlay = 4
 let roundsPlayed = 0
 let randomNumber = Math.floor(Math.random() * 100) + 1
 let guessedNumber
-console.log(randomNumber)
 
 roundsInput.addEventListener('change', (e) => {
     if(e.target.value != "custom"){

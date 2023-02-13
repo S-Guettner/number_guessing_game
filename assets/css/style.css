@@ -13,3 +13,45 @@
 #restartButton{
     display: none;
 }
+
+.inputRoundsSection{
+    border: 2px solid;
+    margin-bottom: 2rem;
+    margin: 2rem;
+    width: 18rem;
+    padding: 1rem;
+}
+.inputRoundsSection p{
+    text-align: center;
+}
+#roundsInput{
+    margin: auto;
+}
+.inputDiv{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+#fiveRounds{
+    margin-right: .35rem;
+}
+#fiveRoundsLabel{
+    padding-right: 2rem;
+}
+
+#numberInput{
+    display: block;
+}
+.inputSection{
+    border: 2px solid;
+    margin: 2rem;
+    width: 18rem;
+    padding: 1rem;
+    text-align: center;
+}
+#numberInput{
+    margin: auto;
+    padding: 1rem;
+    margin-bottom: .5rem;
+}
