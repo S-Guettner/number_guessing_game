@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/js/main.js" defer></script>
+</head>
+<body>
+    <section>
+        <p>In how many rounds you think you can guess the number?</p>
+        <p id="outputRounds"></p>
+        <form id="roundsInput" onsubmit="return false">
+            <div>
+                <input checked value="4" type="radio" name="rounds" id="fourRounds">
+                <label for="fourRounds">4</label>
+                <input value="5" type="radio" name="rounds" id="fiveRounds">
+                <label for="fiveRounds">5</label>
+            </div>
+            <div>
+                <input value="6" type="radio" name="rounds" id="sixRounds">
+                <label for="sixRounds">6</label>
+                <input value="custom" type="radio" name="rounds" id="customRounds">
+                <label for="customRounds">custom</label>
+            </div>
+            <div>
+                <input type="number" name="customInput" id="customInput">
+            </div>
+        </form>
+        
+    </section>
+    <section>
+        <form onsubmit="return false">
+            <input type="number" name="numberInput" id="numberInput">
+            <button id="inputButton">guess</button>
+        </form>
+    </section>
+        <p id="outputResult"></p>
+        <button onclick="window.location.reload()">test reload</button>
+</body>
+</html>
